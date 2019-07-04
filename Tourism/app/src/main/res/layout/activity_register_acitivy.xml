@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+    <include layout="@layout/nav_bar" />
+
+    <!--<view.InputView-->
+    <!--android:id="@+id/username"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--app:input_hint="用户名"-->
+    <!--app:input_icon="@mipmap/icon_username"-->
+
+    <!--&gt;-->
+    <!--</view.InputView>-->
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@mipmap/icon_account"
+        android:hint="用户名"
+
+        android:orientation="horizontal" />
+
+    <!--<View-->
+    <!--style="@style/line"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginRight="20dp" />-->
+
+    <view.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_size"
+        android:orientation="horizontal"
+
+        app:input_hint="手机号"
+        app:input_icon="@mipmap/icon_account"
+        app:is_password="false"></view.InputView>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp" />
+
+    <view.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_size"
+        android:orientation="horizontal"
+        app:input_hint="密码"
+        app:input_icon="@mipmap/icon_password"
+        app:is_password="true"></view.InputView>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp" />
+
+    <view.InputView
+        android:id="@+id/input_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_size"
+        android:orientation="horizontal"
+        app:input_hint="再次输入密码"
+        app:input_icon="@mipmap/icon_password"
+        app:is_password="true"></view.InputView>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_size"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/margin_size"
+        android:background="@color/colorPrimary"
+        android:text="注  册"
+        android:textSize="20sp" />
+
+</LinearLayout>

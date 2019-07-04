@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+    <include layout="@layout/nav_bar"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/login_pic" />
+
+    <view.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_size"
+        app:input_hint="手机号"
+        app:input_icon="@mipmap/icon_account"
+        app:is_password="false"
+        >
+    </view.InputView>
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+       style="@style/line" />
+    <view.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_size"
+        app:input_hint="密码"
+        app:input_icon="@mipmap/icon_password"
+        app:is_password="true"></view.InputView >
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        style="@style/line" />
+    <TextView
+        android:id="@+id/register_button_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即注册"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/margin_size"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/login_button"
+        android:text="登录"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/margin_size"
+        android:layout_marginLeft="@dimen/margin_size"/>
+
+</LinearLayout>

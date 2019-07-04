@@ -1,0 +1,67 @@
+
+login模块
+uid string   prikey
+upassword string
+
+register模块
+username String
+uid string   prikey
+upassword string
+manager int 0 1
+
+主页
+sight模块
+city string
+s_picture string
+brif_introdution string
+introdution string
+sight具体内容模块
+city string
+
+strategy
+city string prikey
+strategy string
+s_picture string
+
+
+
+
+侧边栏
+video模块
+vid  string
+vpath string
+
+photo模块
+pid string
+ppath string
+
+
+
+share模块
+share_aim string
+
+setting模块
+themecolor string
+comment_or_not int
+like_or_not int
+
+熊圈
+mycircle模块
+uid String prikey
+username String
+title   String
+photonum string
+content int  样式
+comment string
+likenum  int
+likename string[]
+cover_photo string  //封面图片
+我的
+person_information
+uid string   prikey
+username string
+sex int
+fans int
+follow int
+fan_list String[]
+follow_list string[]

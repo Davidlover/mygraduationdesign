@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lenovo.tourism"> <!-- 解决项目minSDK与第三方库minSDK不一致情况 -->
+    <uses-sdk tools:overrideLibrary="com.simple.spiderman" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 造成4.9E-324的原因 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REPLACE_EXISTING_PACKAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!-- 8.0必要权限 -->
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="W28rwp3GLPXcFE38w4j1uPkNDuKkj8ko" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <provider -->
+        <!-- android:name="android.support.v4.content.FileProvider" -->
+        <!-- android:authorities="com.llk.study.activity.PhotoActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/file_paths"></meta-data> -->
+        <!-- </provider> -->
+
+        <activity
+            android:name=".activity.BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterAcitivy" />
+        <activity android:name=".activity.ChangeActivity" />
+        <activity android:name=".activity.BannerGallery" />
+        <activity android:name=".activity.newmodel.MomentActivity" />
+        <activity android:name=".activity.BannerGallery_yunnan" />
+        <activity android:name=".activity.City.StrategyContentActivity" />
+        <activity android:name=".activity.BannerGallery_hainan" />
+        <activity android:name=".activity.News.NewsContentActivity" />
+        <activity android:name=".activity.Mycirle.Travel_diary" />
+        <activity android:name=".activity.yaweather.WeatherActivity" />
+        <activity android:name=".activity.Mycirle.LbsActivity" />
+        <activity
+            android:name=".activity.newmodel.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- <activity -->
+        <!-- android:name=".activity.newmodel.MomentActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/Theme.notAnimation" -->
+        <!-- &gt;</activity> -->
+
+        <activity
+            android:name="ui.Sent_Strategy_MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+         ></activity>
+        <activity
+            android:name="ui.NewActivity"
+            android:label="@string/title_activity_new"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+           />
+        <activity
+            android:name="ui.NoteActivity"
+            android:label="@string/title_activity_note" />
+        <activity android:name="ui.BaseActivity" />
+        <!-- <activity android:name="ui.NewActivity" /> -->
+        <!-- <activity android:name="ui.NoteActivity" /> -->
+        <!-- <activity android:name="ui.Sent_Strategy_MainActivity" /> -->
+
+
+        <!-- 图片选择器 -->
+        <!-- <activity -->
+        <!-- android:name="me.iwf.photopicker.PhotoPickerActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="me.iwf.photopicker.PhotoPagerActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+
+        <!-- 知乎图片选择器，适配7.0系统 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.sendtion.matisse.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_o" />
+        </provider>
+
+        <!-- lbs服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".FindWeb.WebfoundActivity"></activity>
+    </application>
+
+</manifest>

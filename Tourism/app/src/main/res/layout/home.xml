@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/main_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:rowCount="2">
+
+        <ImageView
+            android:id="@+id/home_1"
+            android:layout_width="93dp"
+            android:layout_height="87dp"
+            android:src="@drawable/strategy" />
+
+
+        <ImageView
+            android:id="@+id/home_2"
+            android:layout_width="93dp"
+            android:layout_height="87dp"
+            android:src="@drawable/weather_inq" />
+
+        <ImageView
+            android:id="@+id/home_3"
+            android:layout_width="93dp"
+            android:layout_height="87dp"
+            android:src="@drawable/sent_diary" />
+
+        <ImageView
+            android:id="@+id/home_4"
+            android:layout_width="93dp"
+            android:layout_height="87dp"
+            android:src="@drawable/mycircle" />
+
+        <TextView
+            android:text="     城市攻略"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="13dp"/>
+
+        <TextView
+            android:text="    天气查询"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="      发游记"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="        熊圈"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/home_5"
+            android:layout_width="93dp"
+            android:layout_height="87dp"
+            android:src="@drawable/change_key" />
+        <ImageView
+            android:id="@+id/home_6"
+            android:layout_width="93dp"
+            android:layout_height="87dp"
+            android:src="@drawable/find" />
+        <ImageView
+            android:id="@+id/home_7"
+            android:layout_width="93dp"
+            android:layout_height="87dp"
+            />
+        <ImageView
+            android:id="@+id/home_8"
+            android:layout_width="93dp"
+            android:layout_height="87dp"
+             />
+        <TextView
+            android:text="     修改密码"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="        发现"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <!--<TextView-->
+            <!--android:text="        发现"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textStyle="bold" />-->
+
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="Tourism"></dbname>
+    <version value="1"></version>
+    <list>
+<mapping class="Litepal.Book"></mapping>
+        <mapping class="Litepal.Login"></mapping>
+        <mapping class="Litepal.Register"></mapping>
+        <mapping class="Litepal.Sight"></mapping>
+        <mapping class="Litepal.Strategy"></mapping>
+        <mapping class="Litepal.Video"></mapping>
+        <mapping class="Litepal.Photo"></mapping>
+        <mapping class="Litepal.Share"></mapping>
+        <mapping class="Litepal.Setting"></mapping>
+        <mapping class="Litepal.Mycircle"></mapping>
+        <mapping class="Litepal.Person_information"></mapping>
+    </list>
+</litepal>

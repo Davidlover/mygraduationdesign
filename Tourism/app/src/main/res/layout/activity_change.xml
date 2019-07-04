@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+    <include layout="@layout/nav_bar"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+</LinearLayout>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="10dp"
+       android:text="用户名"
+       android:textStyle="bold"
+       android:textSize="20sp"
+       android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_gravity="center"/>
+    <view.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_size"
+        app:input_hint="新密码"
+        app:input_icon="@mipmap/icon_password"
+        app:is_password="false"
+        >
+    </view.InputView>
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        style="@style/line" />
+    <view.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_size"
+        app:input_hint="确认密码"
+        app:input_icon="@mipmap/icon_password"
+        app:is_password="true"></view.InputView >
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        style="@style/line" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:text="修 改 密 码"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_size"
+        android:layout_marginLeft="@dimen/margin_size"
+        android:layout_marginTop="@dimen/margin_size"/>
+
+</LinearLayout>

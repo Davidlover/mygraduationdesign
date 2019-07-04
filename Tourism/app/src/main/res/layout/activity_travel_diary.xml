@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.Mycirle.Travel_diary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edit_diary"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:autofillHints="@string/app_name"
+            android:hint="写一下你的心情..." />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/add_photo_button"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:src="@drawable/add" />-->
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+
+    <!--&gt;-->
+
+    <!--<Button-->
+    <!--android:id="@+id/take_photo"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Take photo"-->
+    <!--android:textAllCaps="false" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/choose_from_album"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Choose From Album"-->
+    <!--android:textAllCaps="false"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/take_photo" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/picture"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/choose_from_album" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/location"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="30dp" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/sent_button"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginTop="130dp"-->
+    <!--android:text="sent" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <Button
+            android:id="@+id/take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/diary_color"
+            android:text="拍 照 获 取 照 片"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/select_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/diary_color"
+            android:text="从 相 册 选 择" />
+
+        <Button
+            android:id="@+id/sent_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="发          送"
+            android:hapticFeedbackEnabled="true"
+            android:background="@color/diary_sent_color"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
